@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: #90E0EF;
+}
+
+.header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);/* Efecto zoom al pasar el mouse */
+}
+
+.header .nav-links{
+    list-style: none;
+    
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);/* Efecto zoom al pasar el mouse */
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #0077B6;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #023E8A;
+}
+
+
+.header .btn button{
+    font-weight: 700;
+    color: #023E8A;
+    padding: 9px 25px;
+    background: #0077B6;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; /* Suaviza el hover */
+    margin: 0 7px;
+    
+    
+}
+
+.header .btn.login button{
+    color: #FFFFFF;
+    background: #023E8A;
+}
+
+.header .btn.crear-cuenta button{
+    color: #023E8A;
+    background: #FFFFFF;
+    
+}
+
+.header .btn button:hover{
+    background-color: #90E0EF;
+    color: #023E8A;
+    transform: scale(1.1);/* Efecto zoom al pasar el mouse */
+}
+
+.slider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #FFFFFF;
+}
+
+.text h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+/* Permite el desplazamiento de las imagenes */
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+
+}
